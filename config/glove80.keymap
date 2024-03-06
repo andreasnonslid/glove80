@@ -339,6 +339,7 @@ mt {
     #binding-cells = <2>;
     flavor = "tap-preferred";
     tapping-term-ms = <200>;
+    require-prior-idle-ms = <125>;
     bindings = <&kp>, <&kp>;
 };
     //////////////////////////////////////////////////////////////////////////
