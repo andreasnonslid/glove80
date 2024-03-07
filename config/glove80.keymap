@@ -352,7 +352,7 @@ mymt_keybind: my_modtap_keybind{
     #binding-cells = <2>;
     bindings = <&kp>, <&kp>;
 };
-#define mymt(hold, tap) mymt_keybind hold tap
+#define mymt(hold,tap) mymt_keybind hold tap
 
     //////////////////////////////////////////////////////////////////////////
     //
@@ -1797,12 +1797,12 @@ mymt_keybind: my_modtap_keybind{
 
         layer_Base {
             bindings = <
-    &kp F1        &kp F2        &kp F3         &kp F4         &kp F5                                                                                                       &kp F6         &kp F7        &kp F8        &kp F9    &kp F10
- &kp EQUAL        &kp N1        &kp N2         &kp N3         &kp N4             &kp N5                                                                     &kp N6         &kp N7         &kp N8        &kp N9        &kp N0  &kp MINUS
-   &kp TAB         &kp Q         &kp W          &kp E          &kp R              &kp T                                                                      &kp Y          &kp U          &kp I         &kp O         &kp P   &kp BSLH
-   &kp ESC  &mymt(LGUI,A)  &mymt(LALT,S)  &mymt(LSHFT,D)  &mymt(LCTRL,F)  &mymt(BACKSPACE,G)                                                              &mymt(SPACE,H)  &mymt(LCTRL,J)  &mymt(LSHFT,K)  &mymt(LALT,L)  &mymt(LGUI,;)    &kp SQT
- &kp LSHFT         &kp Z         &kp X          &kp C          &kp V              &kp B    &kp ESC   &kp LGUI  &trans  &trans  &kp GRAVE  &kp LCTRL          &kp N          &kp M      &kp COMMA       &kp DOT      &kp FSLH  &kp LSHFT
-     &to 2      &kp HOME       &kp END       &kp LALT          &to 3                     &kp SPACE  &kp LCTRL  &trans   &to 4    &kp RET   &kp BSPC                         &to 1       &kp LALT      &kp LBKT      &kp RBKT      &to 2
+    &kp F1          &kp F2          &kp F3           &kp F4           &kp F5                                                                                                             &kp F6           &kp F7          &kp F8             &kp F9    &kp F10
+ &kp EQUAL          &kp N1          &kp N2           &kp N3           &kp N4               &kp N5                                                                       &kp N6           &kp N7           &kp N8          &kp N9             &kp N0  &kp MINUS
+   &kp TAB           &kp Q           &kp W            &kp E            &kp R                &kp T                                                                        &kp Y            &kp U            &kp I           &kp O              &kp P   &kp BSLH
+   &kp ESC  &mymt (LGUI,A)  &mymt (LALT,S)  &mymt (LSHFT,D)  &mymt (LCTRL,F)  &mymt (BACKSPACE,G)                                                              &mymt (SPACE,H)  &mymt (LCTRL,J)  &mymt (LSHFT,K)  &mymt (LALT,L)  &mymt (LGUI,SEMI)    &kp SQT
+ &kp LSHFT           &kp Z           &kp X            &kp C            &kp V                &kp B    &kp ESC   &kp LGUI  &trans  &trans  &kp GRAVE  &kp LCTRL            &kp N            &kp M        &kp COMMA         &kp DOT           &kp FSLH  &kp LSHFT
+     &to 2        &kp HOME         &kp END         &kp LALT            &to 3                       &kp SPACE  &kp LCTRL  &trans   &to 4    &kp RET   &kp BSPC                             &to 1         &kp LALT        &kp LBKT           &kp RBKT      &to 2
             >;
         };
 
