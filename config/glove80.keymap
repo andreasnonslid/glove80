@@ -352,7 +352,7 @@ mymt_keybind: my_modtap_keybind{
     require-prior-idle-ms = <200>;
     bindings = <&kp>, <&kp>;
 };
-#define mymt(hold, tap) &mymt_keybind hold tap
+#define mymt(hold, tap) mymt_keybind hold tap
     //////////////////////////////////////////////////////////////////////////
     //
     // World layer - international characters
