@@ -1849,7 +1849,7 @@ mymomt: my_layer_modtap_keybind{
    &kp TAB     &kp Q    &kp W     &kp E   &kp R   &kp T                                                               &kp Y   &kp U      &kp I     &kp O     &kp P   &kp BSLH
    &kp ESC     &kp A    &kp S     &kp D   &kp F   &kp G                                                               &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
  &kp LSHFT     &kp Z    &kp X     &kp C   &kp V   &kp B    &kp ESC   &kp LGUI   &to 2   &to 3  &kp GRAVE  &kp LCTRL   &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp LSHFT
-     &to 7  &kp HOME  &kp END  &kp LALT  &trans          &kp SPACE  &kp LCTRL   &to 6   &to 4   &kp BSPC    &kp RET          &trans   &kp LALT  &kp LBKT  &kp RBKT      &to 7
+     &to 7  &kp HOME  &kp END  &kp LALT  &trans          &kp SPACE  &kp LCTRL   &to 6   &to 0   &kp BSPC    &kp RET          &trans   &kp LALT  &kp LBKT  &kp RBKT      &to 7
             >;
         };
 
@@ -1871,7 +1871,7 @@ mymomt: my_layer_modtap_keybind{
  &trans         &trans  &trans  &world_e_ae  &trans  &trans                                                  &trans  &trans  &trans  &world_o_slash  &trans  &trans
  &trans  &world_a_ring  &trans       &trans  &trans  &trans                                                  &trans  &trans  &trans          &trans  &trans  &trans
  &trans         &trans  &trans       &trans  &trans  &trans  &trans  &trans   &to 2   &to 3  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans
-  &to 7         &trans  &trans       &trans  &trans          &trans  &trans   &to 6   &to 4  &trans  &trans          &trans  &trans          &trans  &trans   &to 7
+  &to 7         &trans  &trans       &trans  &trans          &trans  &trans   &to 0   &to 4  &trans  &trans          &trans  &trans          &trans  &trans   &to 7
             >;
         };
 
