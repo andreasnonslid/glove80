@@ -942,7 +942,7 @@ mymomt: my_layer_modtap_keybind{
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp E &kp N5)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp KP_PLUS &kp KP_0 &kp KP_2 &kp KP_2)
+        UNICODE_SEQ_WINDOWS(&kp KP_PLUS &kp KP_N0 &kp KP_N2 &kp KP_N2)
       #endif
     )
     UNICODE(world_a_ring_upper, /* Å */
@@ -951,7 +951,7 @@ mymomt: my_layer_modtap_keybind{
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp C &kp N5)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp KP_PLUS &kp KP_0 &kp KP_1 &kp KP_9)
+        UNICODE_SEQ_WINDOWS(&kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N9)
       #endif
     )
     world_a_ring: world_a_ring {
@@ -1134,7 +1134,7 @@ mymomt: my_layer_modtap_keybind{
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp F &kp N8)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp KP_PLUS &kp KP_0 &kp KP_2 &kp KP_3)
+        UNICODE_SEQ_WINDOWS(&kp KP_PLUS &kp KP_N0 &kp KP_N2 &kp KP_N3)
       #endif
     )
     UNICODE(world_o_slash_upper, /* Ø */
@@ -1143,7 +1143,7 @@ mymomt: my_layer_modtap_keybind{
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp D &kp N8)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp KP_PLUS &kp KP_0 &kp KP_2 &kp KP_1)
+        UNICODE_SEQ_WINDOWS(&kp KP_PLUS &kp KP_N0 &kp KP_N2 &kp KP_N1)
       #endif
     )
     world_o_slash: world_o_slash {
