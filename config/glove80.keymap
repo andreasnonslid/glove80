@@ -819,6 +819,12 @@ mymomt: my_layer_modtap_keybind{
 
 /* Define the Unicode behaviors for 'æ' and 'Æ' */
 
+#define UNICODE(name, sequence) \
+    &macro { \
+        label = name; \
+        sequence = <sequence>; \
+    }
+
 UNICODE(world_e_ae_lower, UNICODE_E_AE_LOWER)
 UNICODE(world_e_ae_upper, UNICODE_E_AE_UPPER)
 
