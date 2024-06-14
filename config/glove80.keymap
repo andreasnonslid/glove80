@@ -794,6 +794,11 @@ mymomt: my_layer_modtap_keybind{
     };
 
 
+/* Ensure UNICODE macro is not previously defined */
+#ifdef UNICODE
+  #undef UNICODE
+#endif
+
 /* Define Unicode sequences for 'æ' and 'Æ' based on the target OS */
 
 #define UNICODE_SEQ_LINUX_E_AE_LOWER   &kp E &kp N6
