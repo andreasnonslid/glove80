@@ -25,8 +25,13 @@ jobs:
 
       - name: Install Cachix
         run: |
-          nix-env -iA cachix -f https://cachix.org/api/v1/install
-          cachix use moergo-glove80-zmk-dev
+          nix-channel --update
+          nix-env -iA nixpkgs.cachix
+        env:
+          NIX_PATH: nixpkgs=channel:nixos-unstable
+
+      - name: Configure Cachix
+        run: cachix use moergo-glove80-zmk-dev
 
       - name: Build Glove80 combined firmware
         run: nix-build config -o combined
