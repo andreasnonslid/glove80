@@ -792,30 +792,48 @@ mymomt: my_layer_modtap_keybind{
         bindings = <&world_e_grave_lower>, <&world_e_grave_upper>;
         mods = <MOD_LSFT>;
     };
-    UNICODE(world_e_ae_lower, /* æ */
-      #if UNICODE_TARGET_OS == 'L'
-        UNICODE_SEQ_LINUX(&kp E &kp N6)
-      #elif UNICODE_TARGET_OS == 'M'
-        UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp E &kp N6)
-      #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp E &kp N6)
-      #endif
-    )
-    UNICODE(world_e_ae_upper, /* Æ */
-      #if UNICODE_TARGET_OS == 'L'
-        UNICODE_SEQ_LINUX(&kp C &kp N6)
-      #elif UNICODE_TARGET_OS == 'M'
-        UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp C &kp N6)
-      #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp C &kp N6)
-      #endif
-    )
-    world_e_ae: world_e_ae {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&world_e_ae_lower>, <&world_e_ae_upper>;
-        mods = <MOD_LSFT>;
-    };
+
+
+/* Define Unicode sequences for 'æ' and 'Æ' based on the target OS */
+
+#define UNICODE_SEQ_LINUX_E_AE_LOWER   &kp E &kp N6
+#define UNICODE_SEQ_MACOS_E_AE_LOWER   &kp N0 &kp N0 &kp E &kp N6
+#define UNICODE_SEQ_WINDOWS_E_AE_LOWER &kp E &kp N6
+
+#define UNICODE_SEQ_LINUX_E_AE_UPPER   &kp C &kp N6
+#define UNICODE_SEQ_MACOS_E_AE_UPPER   &kp N0 &kp N0 &kp C &kp N6
+#define UNICODE_SEQ_WINDOWS_E_AE_UPPER &kp C &kp N6
+
+/* Define the sequences based on the target OS */
+
+#if UNICODE_TARGET_OS == 'L'
+  #define UNICODE_E_AE_LOWER UNICODE_SEQ_LINUX_E_AE_LOWER
+  #define UNICODE_E_AE_UPPER UNICODE_SEQ_LINUX_E_AE_UPPER
+#elif UNICODE_TARGET_OS == 'M'
+  #define UNICODE_E_AE_LOWER UNICODE_SEQ_MACOS_E_AE_LOWER
+  #define UNICODE_E_AE_UPPER UNICODE_SEQ_MACOS_E_AE_UPPER
+#elif UNICODE_TARGET_OS == 'W'
+  #define UNICODE_E_AE_LOWER UNICODE_SEQ_WINDOWS_E_AE_LOWER
+  #define UNICODE_E_AE_UPPER UNICODE_SEQ_WINDOWS_E_AE_UPPER
+#endif
+
+/* Define the Unicode behaviors for 'æ' and 'Æ' */
+
+UNICODE(world_e_ae_lower, UNICODE_E_AE_LOWER)
+UNICODE(world_e_ae_upper, UNICODE_E_AE_UPPER)
+
+/* Define the behavior configuration */
+
+world_e_ae: world_e_ae {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&world_e_ae_lower>, <&world_e_ae_upper>;
+    mods = <MOD_LSFT>;
+};
+
+
+
+
     UNICODE(world_a_acute_lower, /* á */
       #if UNICODE_TARGET_OS == 'L'
         UNICODE_SEQ_LINUX(&kp E &kp N1)
@@ -936,30 +954,46 @@ mymomt: my_layer_modtap_keybind{
         bindings = <&world_a_tilde_lower>, <&world_a_tilde_upper>;
         mods = <MOD_LSFT>;
     };
-    UNICODE(world_a_ring_lower, /* å */
-      #if UNICODE_TARGET_OS == 'L'
-        UNICODE_SEQ_LINUX(&kp E &kp N5)
-      #elif UNICODE_TARGET_OS == 'M'
-        UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp E &kp N5)
-      #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp E &kp N5)
-      #endif
-    )
-    UNICODE(world_a_ring_upper, /* Å */
-      #if UNICODE_TARGET_OS == 'L'
-        UNICODE_SEQ_LINUX(&kp C &kp N5)
-      #elif UNICODE_TARGET_OS == 'M'
-        UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp C &kp N5)
-      #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp C &kp N5)
-      #endif
-    )
-    world_a_ring: world_a_ring {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&world_a_ring_lower>, <&world_a_ring_upper>;
-        mods = <MOD_LSFT>;
-    };
+
+
+/* Define Unicode sequences for 'å' and 'Å' based on the target OS */
+
+#define UNICODE_SEQ_LINUX_A_RING_LOWER   &kp E &kp N5
+#define UNICODE_SEQ_MACOS_A_RING_LOWER   &kp N0 &kp N0 &kp E &kp N5
+#define UNICODE_SEQ_WINDOWS_A_RING_LOWER &kp E &kp N5
+
+#define UNICODE_SEQ_LINUX_A_RING_UPPER   &kp C &kp N5
+#define UNICODE_SEQ_MACOS_A_RING_UPPER   &kp N0 &kp N0 &kp C &kp N5
+#define UNICODE_SEQ_WINDOWS_A_RING_UPPER &kp C &kp N5
+
+/* Define the sequences based on the target OS */
+
+#if UNICODE_TARGET_OS == 'L'
+  #define UNICODE_A_RING_LOWER UNICODE_SEQ_LINUX_A_RING_LOWER
+  #define UNICODE_A_RING_UPPER UNICODE_SEQ_LINUX_A_RING_UPPER
+#elif UNICODE_TARGET_OS == 'M'
+  #define UNICODE_A_RING_LOWER UNICODE_SEQ_MACOS_A_RING_LOWER
+  #define UNICODE_A_RING_UPPER UNICODE_SEQ_MACOS_A_RING_UPPER
+#elif UNICODE_TARGET_OS == 'W'
+  #define UNICODE_A_RING_LOWER UNICODE_SEQ_WINDOWS_A_RING_LOWER
+  #define UNICODE_A_RING_UPPER UNICODE_SEQ_WINDOWS_A_RING_UPPER
+#endif
+
+/* Define the Unicode behaviors for 'å' and 'Å' */
+
+UNICODE(world_a_ring_lower, UNICODE_A_RING_LOWER)
+UNICODE(world_a_ring_upper, UNICODE_A_RING_UPPER)
+
+/* Define the behavior configuration */
+
+world_a_ring: world_a_ring {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&world_a_ring_lower>, <&world_a_ring_upper>;
+    mods = <MOD_LSFT>;
+};
+
+
     UNICODE(world_y_acute_lower, /* ý */
       #if UNICODE_TARGET_OS == 'L'
         UNICODE_SEQ_LINUX(&kp F &kp D)
@@ -1128,30 +1162,47 @@ mymomt: my_layer_modtap_keybind{
         bindings = <&world_o_tilde_lower>, <&world_o_tilde_upper>;
         mods = <MOD_LSFT>;
     };
-    UNICODE(world_o_slash_lower, /* ø */
-      #if UNICODE_TARGET_OS == 'L'
-        UNICODE_SEQ_LINUX(&kp F &kp N8)
-      #elif UNICODE_TARGET_OS == 'M'
-        UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp F &kp N8)
-      #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp F &kp N8)
-      #endif
-    )
-    UNICODE(world_o_slash_upper, /* Ø */
-      #if UNICODE_TARGET_OS == 'L'
-        UNICODE_SEQ_LINUX(&kp D &kp N8)
-      #elif UNICODE_TARGET_OS == 'M'
-        UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp D &kp N8)
-      #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp D &kp N8)
-      #endif
-    )
-    world_o_slash: world_o_slash {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&world_o_slash_lower>, <&world_o_slash_upper>;
-        mods = <MOD_LSFT>;
-    };
+
+
+/* Define Unicode sequences for 'ø' and 'Ø' based on the target OS */
+
+#define UNICODE_SEQ_LINUX_O_SLASH_LOWER   &kp F &kp N8
+#define UNICODE_SEQ_MACOS_O_SLASH_LOWER   &kp N0 &kp N0 &kp F &kp N8
+#define UNICODE_SEQ_WINDOWS_O_SLASH_LOWER &kp F &kp N8
+
+#define UNICODE_SEQ_LINUX_O_SLASH_UPPER   &kp D &kp N8
+#define UNICODE_SEQ_MACOS_O_SLASH_UPPER   &kp N0 &kp N0 &kp D &kp N8
+#define UNICODE_SEQ_WINDOWS_O_SLASH_UPPER &kp D &kp N8
+
+/* Define the sequences based on the target OS */
+
+#if UNICODE_TARGET_OS == 'L'
+  #define UNICODE_O_SLASH_LOWER UNICODE_SEQ_LINUX_O_SLASH_LOWER
+  #define UNICODE_O_SLASH_UPPER UNICODE_SEQ_LINUX_O_SLASH_UPPER
+#elif UNICODE_TARGET_OS == 'M'
+  #define UNICODE_O_SLASH_LOWER UNICODE_SEQ_MACOS_O_SLASH_LOWER
+  #define UNICODE_O_SLASH_UPPER UNICODE_SEQ_MACOS_O_SLASH_UPPER
+#elif UNICODE_TARGET_OS == 'W'
+  #define UNICODE_O_SLASH_LOWER UNICODE_SEQ_WINDOWS_O_SLASH_LOWER
+  #define UNICODE_O_SLASH_UPPER UNICODE_SEQ_WINDOWS_O_SLASH_UPPER
+#endif
+
+/* Define the Unicode behaviors for 'ø' and 'Ø' */
+
+UNICODE(world_o_slash_lower, UNICODE_O_SLASH_LOWER)
+UNICODE(world_o_slash_upper, UNICODE_O_SLASH_UPPER)
+
+/* Define the behavior configuration */
+
+world_o_slash: world_o_slash {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&world_o_slash_lower>, <&world_o_slash_upper>;
+    mods = <MOD_LSFT>;
+};
+
+
+
     UNICODE(world_u_acute_lower, /* ú */
       #if UNICODE_TARGET_OS == 'L'
         UNICODE_SEQ_LINUX(&kp F &kp A)
