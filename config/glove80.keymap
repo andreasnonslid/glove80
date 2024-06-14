@@ -798,7 +798,7 @@ mymomt: my_layer_modtap_keybind{
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp E &kp N6)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp KP_PLUS &kp KP_0 &kp KP_2 &kp KP_3)
+        UNICODE_SEQ_WINDOWS(&kp KP_PLUS &kp KP_N0 &kp KP_N2 &kp KP_N3)
       #endif
     )
     UNICODE(world_e_ae_upper, /* Æ */
@@ -807,7 +807,7 @@ mymomt: my_layer_modtap_keybind{
       #elif UNICODE_TARGET_OS == 'M'
         UNICODE_SEQ_MACOS(&kp N0 &kp N0 &kp C &kp N6)
       #elif UNICODE_TARGET_OS == 'W'
-        UNICODE_SEQ_WINDOWS(&kp KP_PLUS &kp KP_0 &kp KP_1 &kp KP_9)
+        UNICODE_SEQ_WINDOWS(&kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N9)
       #endif
     )
     world_e_ae: world_e_ae {
