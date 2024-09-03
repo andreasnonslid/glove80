@@ -469,12 +469,12 @@ mymomt: my_layer_modtap_keybind{
 
         layer_MO_Win_desktops {
             bindings = <
- &trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+ &trans            &trans             &trans         &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
+ &trans            &trans             &trans         &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans            &trans      &kp LG(LC(W))         &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &kp LG(LC(D))  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans            &trans             &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans            &trans             &trans         &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
