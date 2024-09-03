@@ -381,12 +381,12 @@ mymomt: my_layer_modtap_keybind{
 
         layer_Base {
             bindings = <
-    &kp F1    &kp F2   &kp F3    &kp F4     &kp F5                                                                                                                    &kp F6     &kp F7    &kp F8    &kp F9    &kp F10
- &kp EQUAL    &kp N1   &kp N2    &kp N3     &kp N4  &kp N5                                                                                                 &kp N6     &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
-   &kp TAB     &kp Q    &kp W     &kp E      &kp R   &kp T                                                                                                  &kp Y      &kp U      &kp I     &kp O     &kp P   &kp BSLH
-   &kp ESC     &kp A    &kp S     &kp D      &kp F   &kp G                                                                                                  &kp H      &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
- &kp LSHFT     &kp Z    &kp X     &kp C      &kp V   &kp B                      &kp ESC   &kp LGUI   &to 2   &to 3  &kp GRAVE                   &kp LCTRL   &kp N      &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp LSHFT
-     &to 7  &kp HOME  &kp END  &kp LALT  &sk LSHFT          &mymomt LAYER_Symbols SPACE  &kp LCTRL   &to 6   &to 4   &kp BSPC  &mymomt LAYER_Arrows ENTER          &sk LSHFT   &kp RALT  &kp LBKT  &kp RBKT      &to 7
+    &kp F1    &kp F2   &kp F3    &kp F4  &kp F5                                                                                                                 &kp F6     &kp F7    &kp F8    &kp F9    &kp F10
+ &kp EQUAL    &kp N1   &kp N2    &kp N3  &kp N4  &kp N5                                                                                                 &kp N6  &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
+   &kp TAB     &kp Q    &kp W     &kp E   &kp R   &kp T                                                                                                  &kp Y   &kp U      &kp I     &kp O     &kp P   &kp BSLH
+   &kp ESC     &kp A    &kp S     &kp D   &kp F   &kp G                                                                                                  &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
+ &kp LSHFT     &kp Z    &kp X     &kp C   &kp V   &kp B                      &kp ESC   &kp LGUI   &to 2   &to 3  &kp GRAVE                   &kp LCTRL   &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp LSHFT
+     &to 7  &kp HOME  &kp END  &kp LALT   &mo 8          &mymomt LAYER_Symbols SPACE  &kp LCTRL   &to 6   &to 4   &kp BSPC  &mymomt LAYER_Arrows ENTER           &mo 9   &kp RALT  &kp LBKT  &kp RBKT      &to 7
             >;
         };
 
@@ -464,6 +464,28 @@ mymomt: my_layer_modtap_keybind{
  &bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                         &none       &none   &none   &none   &none     &bootloader
        &none            &none            &none            &none            &none            &none         &none   &none   &to 2   &to 3   &none   &none   &none       &none   &none   &none   &none           &none
        &to 0            &none            &none            &none            &none                   &out OUT_USB   &none   &to 6   &to 4   &none   &none               &none   &none   &none   &none           &to 0
+            >;
+        };
+
+        layer_MO_Win_desktops {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_MO_Unused {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
